@@ -1,5 +1,8 @@
 // ==========================================
 // 🧟 ZOMBIE ESCAPE GAME - BFS & DFS Demo
+// Author: Rithika
+// Description: Interactive visualization of
+//              graph traversal algorithms
 // ==========================================
 
 class ZombieEscapeGame {
