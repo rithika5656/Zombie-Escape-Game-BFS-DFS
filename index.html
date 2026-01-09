@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🧟 Zombie Escape Game - BFS & DFS Visualization</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🧟‍♂️ Zombie Escape Game</h1>
+            <p class="subtitle">BFS = Zombie Spread | DFS = Player Escape Path</p>
+        </header>
+
+        <div class="game-info">
+            <div class="legend">
+                <div class="legend-item"><span class="cell-demo player"></span> Player (P)</div>
+                <div class="legend-item"><span class="cell-demo zombie"></span> Zombie (Z)</div>
+                <div class="legend-item"><span class="cell-demo exit"></span> Exit (E)</div>
+                <div class="legend-item"><span class="cell-demo wall"></span> Wall</div>
+                <div class="legend-item"><span class="cell-demo path"></span> Escape Path</div>
+                <div class="legend-item"><span class="cell-demo infected"></span> Infected</div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="startZombies" class="btn btn-danger">
+                🧟 Start Zombie Spread (BFS)
+            </button>
+            <button id="findEscape" class="btn btn-success">
+                🏃 Find Escape Path (DFS)
+            </button>
+            <button id="resetGame" class="btn btn-primary">
+                🔄 Reset Game
+            </button>
+            <button id="randomMap" class="btn btn-secondary">
+                🎲 Random Map
+            </button>
+        </div>
+
+        <div class="speed-control">
+            <label for="speed">Animation Speed:</label>
+            <input type="range" id="speed" min="50" max="500" value="200">
+            <span id="speedValue">200ms</span>
+        </div>
+
+        <div id="gameGrid" class="game-grid"></div>
+
+        <div id="status" class="status">
+            Click "Start Zombie Spread" to see BFS in action, or "Find Escape Path" for DFS!
+        </div>
+
+        <div class="algorithm-info">
+            <div class="algo-card">
+                <h3>🔴 BFS - Breadth First Search</h3>
+                <p>Zombies spread level by level, infecting all adjacent cells before moving further. This simulates realistic zombie spread - closest cells get infected first!</p>
+                <code>Queue-based | O(V + E) | Shortest path guarantee</code>
+            </div>
+            <div class="algo-card">
+                <h3>🟢 DFS - Depth First Search</h3>
+                <p>Player explores one path completely before backtracking. Goes as deep as possible in one direction before trying alternatives.</p>
+                <code>Stack/Recursion | O(V + E) | Memory efficient</code>
+            </div>
+        </div>
+
+        <footer>
+            <p>Built with ❤️ to demonstrate Graph Algorithms | BFS & DFS Visualization</p>
+        </footer>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
