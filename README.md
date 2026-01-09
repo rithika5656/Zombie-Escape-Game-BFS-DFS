@@ -34,7 +34,17 @@ An interactive web-based game that demonstrates **Breadth-First Search (BFS)** a
 - ⚡ **Adjustable speed** - Control animation speed with slider
 - 📱 **Responsive design** - Works on desktop and mobile
 
-## 🛠️ Tech Stack
+## � Use Cases
+
+This project serves multiple purposes for different audiences:
+
+- **🎓 Educational Visualization**: Perfect for computer science students learning about Graph Theory. It visually demonstrates the difference between "breadth-first" (layer by layer) and "depth-first" (deep dive) exploration.
+- **🧟 Simulation Modeling**: Illustrates how infections or broadcast signals spread in a network using BFS.
+- **🧩 Pathfinding Logic**: Demonstrates how game AI agents might find paths through mazes or obstacles using DFS.
+- **💻 Algorithm Interview Prep**: A practical, interactive way to revise standard graph traversal algorithms for technical interviews.
+- **🎮 Game Development**: Acts as a starter template for grid-based strategy or puzzle games requiring pathfinding mechanics.
+
+## �🛠️ Tech Stack
 
 - **HTML5** - Structure
 - **CSS3** - Styling & Animations
